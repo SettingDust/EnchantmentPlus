@@ -1,0 +1,2 @@
+# EnchantmentPlus
+A Bukkit Plugin
