@@ -1,0 +1,7 @@
+name: EnchantmentPlus
+main: com.settingdust.enchantmentplus.EnchantmentPlus
+version: 1.0.0
+authors: [SettingDust]
+softdepend:
+commands:
+  enplus:
