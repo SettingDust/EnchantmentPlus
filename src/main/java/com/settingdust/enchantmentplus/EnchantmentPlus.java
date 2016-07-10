@@ -58,7 +58,7 @@ public class EnchantmentPlus extends JavaPlugin {
                     if (item.containsEnchantment(enchantment)) {
                         int level = item.getEnchantmentLevel(enchantment);
 
-                        if (level + Integer.parseInt(args[1]) > 10000) {
+                        if (level + Integer.parseInt(args[1]) > 150) {
                             player.sendMessage(ChatColor.RED + "此物品已达到可强化最高等级!");
                         } else {
                             item.removeEnchantment(enchantment);
@@ -66,7 +66,7 @@ public class EnchantmentPlus extends JavaPlugin {
                             player.sendMessage(ChatColor.GREEN + "强化" + args[0] + (level + Integer.parseInt(args[1])) + "已成功!");
                         }
                     } else {
-                        if (Integer.parseInt(args[1]) > 10000) {
+                        if (Integer.parseInt(args[1]) > 150) {
                             player.sendMessage(ChatColor.RED + "此物品已达到可强化最高等级!");
                         } else {
                             item.addUnsafeEnchantment(enchantment, Integer.parseInt(args[1]));
